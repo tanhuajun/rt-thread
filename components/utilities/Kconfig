@@ -178,6 +178,12 @@ config RT_USING_ULOG
             help
                 The low level output using rt_kprintf().
 
+        config ULOG_BACKEND_USING_NETWORK
+            bool "Enable network backend."
+            default n
+            help
+                The low level output using sendto().
+
         config ULOG_BACKEND_USING_FILE
             bool "Enable file backend."
             select RT_USING_DFS

@@ -719,6 +719,12 @@ RTM_EXPORT(lwip_getaddrinfo);
 #endif /* LWIP_DNS */
 #endif /* LWIP_SOCKET */
 
+RTM_EXPORT(lwip_gethostbyname);
+RTM_EXPORT(lwip_gethostbyname_r);
+RTM_EXPORT(lwip_freeaddrinfo);
+RTM_EXPORT(lwip_getaddrinfo);
+
+
 #if LWIP_DHCP
 #include <lwip/dhcp.h>
 RTM_EXPORT(dhcp_start);
